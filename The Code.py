@@ -15,11 +15,15 @@ while True:
           print ("\nDice: ",dice)
           dice.clear()
 #-----------Inputs-----------#
-    again = input("\n\nPress enter to roll again, or 1 to change roll settings: ")
+    again = input("\n\nPress enter to roll again, or 1 to change roll settings, 0 to exit: ")
           
     if again == "1":
         for i in range(0, 35):
             print("\n\n")
         how_many = int(input("How many dice? "))
         roll = int(input("Roll dice how many times? "))
+        
+    elif again == "0":
+        print("Okay See Ya!!!!")
+        exit()
 #=============================================#
